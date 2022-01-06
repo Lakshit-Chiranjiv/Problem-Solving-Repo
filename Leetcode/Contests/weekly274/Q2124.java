@@ -15,7 +15,7 @@ public class Q2124 {
     }
 
     public static void main(String[] args) {
-        String s = "aaavfbbabjhhcddv";//false required
+        String s = "aaavfbbabjhhcddv";
         boolean ans = checkString(s);
         System.out.println("ans = "+ans);
     }
