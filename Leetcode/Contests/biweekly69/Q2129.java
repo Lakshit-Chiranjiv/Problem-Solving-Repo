@@ -1,7 +1,7 @@
 package Contests.biweekly69;
-//5960. Capitalize the Title
+//2129. Capitalize the Title
 
-public class Q5960 {
+public class Q2129 {
     public static String capitalizeTitle(String title) {
         title = title + " ";
         StringBuilder wrd = new StringBuilder();

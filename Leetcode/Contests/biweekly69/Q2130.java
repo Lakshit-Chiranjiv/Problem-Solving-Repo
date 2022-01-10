@@ -1,8 +1,8 @@
 package Contests.biweekly69;
-//5961. Maximum Twin Sum of a Linked List
+//2030. Maximum Twin Sum of a Linked List
 
 import java.util.*;
-public class Q5961 {
+public class Q2130 {
     ListNode ln = new ListNode();
     public static int pairSum(ListNode head) {
         long maxTwinSum = 0,currentTwinSum = 0;
