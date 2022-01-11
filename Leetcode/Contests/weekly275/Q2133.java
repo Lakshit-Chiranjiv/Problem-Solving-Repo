@@ -8,18 +8,20 @@ public class Q2133 {
         int[] arr = new int[matrix.length];
         Arrays.fill(arr,0);
         int checkVal = 0;
-        for (int[] ints : matrix) {
+        for (int i = 0;i < matrix.length;i++) {
             checkVal++;
-            for (int i = 0;i < matrix.length;i++) {
-                for (int j = 0; j < matrix[0].length; j++) {
-                    arr[matrix[i][j] - 1]++;
-                }
-
-                for (int j : arr) {
-                    System.out.print(j + "#");
-                    if (j != checkVal) return false;
-                }
-                System.out.println();
+            for (int j = 0; j < matrix[0].length; j++) {
+                arr[matrix[i][j] - 1]++;
+            }
+            for (int j : arr) {
+                if (j != checkVal) return false;
+            }
+            checkVal++;
+            for (int j = 0; j < matrix[0].length; j++) {
+                arr[matrix[j][i] - 1]++;
+            }
+            for (int j : arr) {
+                if (j != checkVal) return false;
             }
         }
         return true;
