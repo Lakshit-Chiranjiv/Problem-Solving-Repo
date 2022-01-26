@@ -2,7 +2,7 @@ package Practise.BinaryTrees;
 //1305. All Elements in Two Binary Search Trees
 import java.util.*;
 
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
